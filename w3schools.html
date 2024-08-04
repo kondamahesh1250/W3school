@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container>.child1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            font-size: 1em;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            letter-spacing: 3px;
+            background-color: white;
+            padding: 15px;
+            z-index: 1;
+        }
+
+        #a {
+            position: relative;
+            left: 20px;
+        }
+
+        #a:hover,
+        #b:hover,
+        #c:hover,
+        #d:hover {
+            background-color: gray;
+            padding: 10px;
+            opacity: 0.70;
+            cursor: pointer;
+        }
+
+        #b {
+            position: relative;
+            left: 500px;
+        }
+
+        #c {
+            position: relative;
+            left: 240px;
+        }
+
+        #d {
+            position: relative;
+            right: 20px;
+        }
+
+        #ar {
+            /* position: relative; */
+            width: 100%;
+        }
+
+        #br {
+            position: relative;
+            bottom: 360px;
+            left: 550px;
+            font-size: 2em;
+            width: 10px;
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            opacity: 0.75;
+            letter-spacing: 2px;
+        }
+
+        #name {
+            position: relative;
+            bottom: 360px;
+            left: 560px;
+            font-size: 2em;
+            color: white;
+            letter-spacing: 4px;
+            font-size: 35px;
+        }
+
+        #pro,
+        #about {
+            position: relative;
+            left: 20px;
+            font-size: 25px;
+        }
+
+        .images {
+            position: relative;
+            left: 10px;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        #summer {
+            position: absolute;
+            left: 0;
+            top: -16px;
+            bottom: 365px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #brick {
+            position: absolute;
+            left: 338px;
+            top: -16px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #reno {
+            position: absolute;
+            left: 678px;
+            top: -16px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #barn {
+            position: absolute;
+            right: 207px;
+            top: -16px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #sum {
+            position: absolute;
+            top: 204px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #bri {
+            position: absolute;
+            left: 338px;
+            top: 204px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #ren {
+            position: absolute;
+            top: 204px;
+            left: 677px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        #bar {
+            position: absolute;
+            top: 204px;
+            right: 207px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            font-size: 1em;
+            padding: 8px;
+        }
+
+        .images1 {
+            display: grid;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            position: relative;
+            left: 20px; 
+            gap: 20px;
+        }
+
+        #aa,
+        #bb,
+        #cc,
+        #dd {
+            font-size: 23px;
+        }
+
+        #aaa,
+        #bbb,
+        #ccc,
+        #ddd {
+            font-size: 16px;
+            opacity: 0.5;
+        }
+
+        #aaaa,
+        #bbbb,
+        #cccc,
+        #dddd {
+            font-size: 1em;
+            opacity: 0.75;
+        }
+
+        #aaaaa,
+        #bbbbb,
+        #ccccc,
+        #ddddd {
+            font-size: 16px;
+            border: 1px solid rgb(228, 227, 227);
+            background-color: rgb(228, 227, 227);
+            text-align: center;
+            padding: 8px;
+            opacity: 0.75;
+            width: 300px;
+        }
+
+        #aaaaa:hover {
+            background-color: rgb(221, 218, 218);
+            opacity: 1;
+            cursor: pointer;
+        }
+        #para{
+            font-size: 15px;
+            opacity: 0.65;
+            margin-left: 20px;
+            /* letter-spacing: 1px; */
+        }
+        #name1{
+            margin-left: 15px;
+             width: 100%;
+              height: 35px;
+        }
+       input[placeholder='Name']{
+        padding-left: 15px;
+        font-size: 15px;
+       }
+       input[placeholder='Email']{
+        padding-left: 15px;
+        font-size: 15px;
+       }
+       input[placeholder='Subject']{
+        padding-left: 15px;
+        font-size: 15px;
+       }
+       input[placeholder='Comment']{
+        padding-left: 15px;
+        font-size: 15px;
+       }
+       .cont{
+        margin-right: 50px;
+       }
+       button:hover{
+        opacity: 0.2;
+       }
+       #w3{
+        color: white;
+       }
+       #w3:hover{
+        color: green;
+        /* background-color: green; */
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">
+            <nav id="a"><b>BR</b> Architects</nav>
+            <nav id="b">Projects</nav>
+            <nav id="c">About</nav>
+            <nav id="d">Contact</nav>
+        </div>
+        <div style="position: relative;">
+            <img src="./architect.jpg" alt="" id="ar">
+            <span id="br">BR</span>
+            <span id="name">Architects</span>
+            <p id="pro">Projects</p>
+            <hr style="opacity: 0.5;">
+        </div>
+        <div class="images">
+            <img src="./1.jpg" alt="" width="300px">
+            <p id="summer">Summer House</p>
+            <img src="./2.jpg" alt="" width="300px">
+            <p id="brick">Brick House</p>
+            <img src="./3.jpg" alt="" width="300px">
+            <p id="reno">Renovated</p>
+            <img src="./4.jpg" alt="" width="300px">
+            <p id="barn">Barn House</p>
+            <img src="./5.jpg" alt="" width="300px">
+            <p id="sum">Summer House</p>
+            <img src="./6.jpg" alt="" width="300px">
+            <p id="bri">Brick House</p>
+            <img src="./7.jpg" alt="" width="300px">
+            <p id="ren">Renovated</p>
+            <img src="./8.jpg" alt="" width="300px">
+            <p id="bar">Barn House</p>
+        </div>
+        <br>
+        <p id="about">About</p>
+        <hr style="opacity: 0.5;">
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br><br>
+        <div class="images1">
+            <div>
+                <img src="./11.jpg" alt="" width="300px">
+                <p id="aa">John Doe</p>
+                <p id="aaa">CEO & FOUNDER</p>
+                <p id="aaaa">Phasellus eget enim eu lectus
+                    faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <p id="aaaaa">Contact</p>
+            </div>
+            <div>
+                <img src="./22.jpg" alt="" width="300px">
+                <p id="bb">Jane Doe</p>
+                <p id="bbb">Architect</p>
+                <p id="bbbb">Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.</p>
+                <p id="aaaaa">Contact</p>
+            </div>
+            <div>
+                <img src="./33.jpg" alt="" width="300px">
+                <p id="cc">Mike Ross</p>
+                <p id="ccc">Architect</p>
+                <p id="cccc">Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.</p>
+                <p id="aaaaa">Contact</p>
+            </div>
+            <div>
+                <img src="./44.jpg" alt="" width="300px">
+                <p id="dd">Dan Star</p>
+                <p id="ddd">Architect</p>
+                <p id="dddd">Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.</p>
+                <p id="aaaaa">Contact</p>
+            </div>
+
+        </div>
+        <div class="cont">
+            <p style="position: relative; left: 20px; font-size: 25px;">Contact</p>
+            <hr style="opacity: 0.3;">
+            <p style="margin-left: 15px; font-size: 15px;">Lets get in touch and talk about your next project.</p>
+            <input type="text" name="" id="name1" placeholder="Name">
+            <br><br>
+            <input type="text" id="name1" placeholder="Email">
+            <br><br>
+            <input type="text" name="" id="name1" placeholder="Subject">
+            <br><br>
+            <input type="text" name="" id="name1" placeholder="Comment">
+            <br>
+            <button style="border: 1px solid black; padding: 12px; font-size: 15px; padding-left: 25px; padding-right: 25px; background-color: black; color: white; position: relative; top: 40px; left: 14px; cursor: pointer;">SEND MESSAGE</button>
+        </div>
+        <br><br><br><br><br>
+        <div>
+            <img src="./map.jpg" alt="" width="100%">
+        </div>
+        <div style="border: 1px solid black; padding: 20px; background-color: black; color: white; padding-left: 580px; position: relative; top: 5px;">
+            <p>Powered by <a href="" id="w3">w3.css</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
